@@ -1,6 +1,5 @@
 <template>
 	<div class="backlog-view">
-		<p>Задачи</p>
 		<new-item></new-item>
 		<br>
 		<div class="card" v-for="item in items" :key="item.id">
