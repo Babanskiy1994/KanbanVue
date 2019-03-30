@@ -20,5 +20,15 @@ export default new Vuex.Store({
 		updateItems(state, payload) {
 			state.items[payload.id] = payload.items;
 		},
+		removeItem(state, item) {
+			[state.items.todo, state.items.inProgress, state.items.done].forEach(
+				array => {
+					const indexInArray = array.findIndex(i => i.id === item.id);
+					if (indexInArray > -1) {
+						array.splice(indexInArray, 1);
+					}
+				}
+			);
+		}
 	},
 });
