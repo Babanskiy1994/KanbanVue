@@ -17,5 +17,8 @@ export default new Vuex.Store({
 			state.items.todo.push(Object.assign(item, { id: state.nextId }));
 		state.nextId += 1;
 		},
+		updateItems(state, payload) {
+			state.items[payload.id] = payload.items;
+		},
 	},
 });
