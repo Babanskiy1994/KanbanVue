@@ -1,7 +1,7 @@
 <template>
 	<div id="app">
 		<div class="header">
-			<h1>Kanban Board</h1>
+			<h1>Доска Канбан</h1>
 		</div>
 		<menu-bar></menu-bar>
 		<router-view/>
@@ -21,5 +21,6 @@
 <style>
 	.header {
 		text-align: center;
+		color:brown;
 	}
 </style>

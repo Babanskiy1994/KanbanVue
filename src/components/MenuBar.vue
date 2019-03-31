@@ -14,8 +14,8 @@
       buttonClass(path) {
         return {
           btn: true,
-          'btn-primary': this.$route.path === path,
-          'btn-secondary': this.$route.path !== path
+          'btn-warning': this.$route.path === path,
+          'btn-outline-warning': this.$route.path !== path
         };
       }
     }
@@ -25,5 +25,8 @@
 <style>
   .menubar {
     margin-bottom: 16px;
+  }
+  .btn-group{
+    width: 100%;
   }
 </style>

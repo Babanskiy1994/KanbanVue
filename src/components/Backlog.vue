@@ -20,7 +20,7 @@
 	const badgeDetail = {
 		todo: {
 			text: 'сделать',
-			class: 'badge badge-warning',
+			class: 'badge badge-danger',
 		},
 		inProgress: {
 			text: 'в процессе',

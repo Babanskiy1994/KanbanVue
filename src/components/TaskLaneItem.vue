@@ -17,7 +17,7 @@
 </script>
 
 <style>
-  .card.task-lane-item {
-    background: #dddce5;
+  .task-lane-item {
+    background-color: honeydew;
   }
 </style>
